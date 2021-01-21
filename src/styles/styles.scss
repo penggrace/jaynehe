@@ -264,6 +264,8 @@ header {
 //Work pics
 
 .work {
+    margin-top: 100px;
+    
     .row {
         justify-content: center;
     }
@@ -273,7 +275,8 @@ header {
         height:300px;
         background-position: center;
         float: left;
-        padding: 100px 5px;
+        margin: 5px;
+        overflow: hidden;
     }
     .fixed-misc {
         position: fixed;
