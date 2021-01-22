@@ -34,6 +34,62 @@ const Work = () => {
           }
         }
       }
+      vanntey: file(relativePath: { eq: "IMG_3523.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 300) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      audrey: file(relativePath: { eq: "IMG_3506.JPG" }) {
+        childImageSharp {
+          fluid(maxWidth: 300) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      nikki: file(relativePath: { eq: "IMG_3511.JPG" }) {
+        childImageSharp {
+          fluid(maxWidth: 300) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      tracey: file(relativePath: { eq: "IMG_3495.JPG" }) {
+        childImageSharp {
+          fluid(maxWidth: 300) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      cici: file(relativePath: { eq: "IMG_3491.JPG" }) {
+        childImageSharp {
+          fluid(maxWidth: 300) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      onesong: file(relativePath: { eq: "IMG_3502.JPG" }) {
+        childImageSharp {
+          fluid(maxWidth: 300) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      michelle: file(relativePath: { eq: "IMG_3525.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 300) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      mia: file(relativePath: { eq: "IMG_3519.JPG" }) {
+        childImageSharp {
+          fluid(maxWidth: 300) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `)
     return (
@@ -53,16 +109,28 @@ const Work = () => {
                         <Img fluid={data.chenkks.childImageSharp.fluid} />
                     </div>
                     <div className="column">
-                        <Img fluid={data.jiaye.childImageSharp.fluid} />
+                        <Img fluid={data.vanntey.childImageSharp.fluid} />
                     </div>
                     <div className="column">
-                        <Img fluid={data.christina.childImageSharp.fluid} />
+                        <Img fluid={data.audrey.childImageSharp.fluid} />
                     </div>
                     <div className="column">
-                        <Img fluid={data.lolaland.childImageSharp.fluid} />
+                        <Img fluid={data.nikki.childImageSharp.fluid} />
                     </div>
                     <div className="column">
-                        <Img fluid={data.chenkks.childImageSharp.fluid} />
+                        <Img fluid={data.tracey.childImageSharp.fluid} />
+                    </div>
+                    <div className="column">
+                        <Img fluid={data.cici.childImageSharp.fluid} />
+                    </div>
+                    <div className="column">
+                        <Img fluid={data.onesong.childImageSharp.fluid} />
+                    </div>
+                    <div className="column">
+                        <Img fluid={data.michelle.childImageSharp.fluid} />
+                    </div>
+                    <div className="column">
+                        <Img fluid={data.mia.childImageSharp.fluid} />
                     </div>
                 </div>
             </div>
