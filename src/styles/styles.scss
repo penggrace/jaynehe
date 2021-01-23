@@ -260,38 +260,128 @@ header {
     }
 }
 
-
 //Work pics
 
 .work {
     margin-top: 100px;
-    
+    position: relative;
     .row {
         justify-content: center;
-    }
-    .column {
-        object-fit: cover;
-        width: 300px;
-        height:300px;
-        background-position: center;
-        float: left;
-        margin: 5px;
-        overflow: hidden;
-    }
-    .fixed-misc {
-        position: fixed;
-        top: 50%;
-        right: -48px;
-        transform: rotate(-90deg);
-        font-weight: 700;
-        text-transform: uppercase;
-        font-size: 0.875rem;
-        letter-spacing: 1.5px;
-        @media (max-width:1440 px) {
-            right: -112px;
+            .column {
+                object-fit: cover;
+                width: 300px;
+                height: 300px;
+                background-position: center;
+                background-size: cover;
+                float: left;
+                margin: 8px;
+                overflow: hidden;
+                align: center;
+
+                .img-container {
+                    position: relative;
+                    color: white;
+                    width: 300px;
+                    height: 300px;
+                    align-items: center;
+                    justify-content: center;
+
+                    .img-caption {
+                        display: none;
+                        position: absolute;
+                        top: 0;
+                        color: $off-white;
+                        font-size: 24px;
+                        text-align: center;
+                        width: 100%;
+                        height: 90%;
+                        justify-content: flex-end;
+                        flex-direction: column;
+                    }
+
+                    &:hover .img-caption {
+                        display: flex;
+                        
+                    }
+                }
+                &:hover .img-container {
+                    opacity: 0.6;
+                }
+            }
         }
     }
+
+.fixed-misc {
+    position: fixed;
+    top: 50%;
+    right: -48px;
+    transform: rotate(-90deg);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    letter-spacing: 1.5px;
+    @media (max-width:1440 px) {
+        right: -112px;
+    }
 }
+// .work {
+//     margin-top: 100px;
+//     position: relative;
+
+//     .row {
+//         justify-content: center;
+//     }
+//     .column {
+//         object-fit: cover;
+//         width: 300px;
+//         height: 300px;
+//         background-position: center;
+//         background-size: cover;
+//         float: left;
+//         margin: 5px;
+//         overflow: hidden;
+//         align: center;
+//     }
+//     .fixed-misc {
+//         position: fixed;
+//         top: 50%;
+//         right: -48px;
+//         transform: rotate(-90deg);
+//         font-weight: 700;
+//         text-transform: uppercase;
+//         font-size: 0.875rem;
+//         letter-spacing: 1.5px;
+//         @media (max-width:1440 px) {
+//             right: -112px;
+//         }
+//     }
+// }
+
+// .img-container {
+//     position: relative;
+//     width: 300px;
+//   }
+  
+//   .img-container:hover .image-caption {
+//     display: flex;
+//   }
+  
+//   .img-container img {
+//     width: 100%;
+//   }
+  
+//   .img-caption {
+//     background: rgba(0, 0, 0, 0.5);
+//     display: none;
+//     color: white;
+//     position: absolute;
+//     width: 100%;
+//     height: 100%;
+//     top: 0;
+//     flex-direction: column;
+//     justify-content: flex-end;
+//     align-items: center;
+//   }
 
 
 
