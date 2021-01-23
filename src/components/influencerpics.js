@@ -3,7 +3,7 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from 'gatsby-image'
 
-const Work = () => {
+const Influencers = () => {
   const data = useStaticQuery(graphql`
     query {
       jiaye: file(relativePath: { eq: "IMG_3517.JPG" }) {
@@ -178,7 +178,7 @@ const Work = () => {
     }
   `)
   return (
-    <div className="work">
+    <div className="influencers">
       <div className="container">
         <div className="row">
           <div className="column">
@@ -335,4 +335,4 @@ const Work = () => {
 
 
 
-export default Work
+export default Influencers

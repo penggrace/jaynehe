@@ -260,9 +260,9 @@ header {
     }
 }
 
-//Work pics
+//Influencer pics
 
-.work {
+.influencers {
     margin-top: 100px;
     position: relative;
     .row {
@@ -290,7 +290,8 @@ header {
                         display: none;
                         position: absolute;
                         top: 0;
-                        color: $off-white;
+                        color: #fff5ee;
+                        text-shadow: rgb(90, 113, 145) 0px 0px 1px;
                         font-size: 24px;
                         text-align: center;
                         width: 100%;

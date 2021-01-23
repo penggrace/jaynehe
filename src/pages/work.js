@@ -2,14 +2,14 @@ import React from 'react'
 import "../styles/styles.scss"
 
 import Header from "../components/header"
-import Work from '../components/workpics'
+import Influencers from '../components/influencerpics'
 
 
-const WorkPage = () => (
+const InfluencersPage = () => (
     <div>
       <Header/>
-      <Work/>
+      <Influencers/>
     </div>
   )
   
-  export default WorkPage
+  export default InfluencersPage
