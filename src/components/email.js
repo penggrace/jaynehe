@@ -13,6 +13,13 @@ const Email = () => {
           }
         }
       }
+      ig: file(relativePath: { eq: "iglogo.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 300) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `)
     return (
@@ -21,10 +28,19 @@ const Email = () => {
               <div className="inner-blurb">
                   <div className="content">
                     <h3>Contact Me</h3>
+                    <div className="container">
+                      <div className="resume">
+                        <p3>Resume available upon request</p3>
+                      </div>
                     <div className="email-image">
                         <Img fluid={data.logo.childImageSharp.fluid} />
                     </div>
                         <p>jayne@outcaststudio.co</p>
+                        <div className="ig-image">
+                        <Img fluid={data.ig.childImageSharp.fluid} />
+                    </div>
+                        <p1>@jjjling</p1>
+                  </div>
                   </div>
               </div>
           </div>

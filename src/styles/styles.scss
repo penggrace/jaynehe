@@ -47,12 +47,12 @@ header {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        height: 80px;
+        height: 90px;
         .logo {
             a {
-                font-weight: 700;
+                font-weight: bolder;
                 text-decoration: none;
-                letter-spacing: 1.5px;
+                letter-spacing: 2.5px;
                 color: $black
             }
         }
@@ -62,6 +62,7 @@ header {
                     margin: 0 20px;
                     text-decoration: none;
                     letter-spacing: 1.75px;
+                    font-weight: bold;
                     text-transform: uppercase;
                     font-size: 0.75rem;
                     color: $black;
@@ -82,13 +83,13 @@ header {
     align-items: center;
     background-color: $white;
     position: relative;
-    height: 100vh;
+    height: 110vh;
     .row {
         position: relative;
         .main-text {
-            font-size: 5.8rem;
+            font-size: 5rem;
             text-transform: uppercase;
-            letter-spacing: 42px;
+            letter-spacing: 48px;
             font-weight: 700;
             color: $white;
             position: absolute;
@@ -105,7 +106,7 @@ header {
             }
         }
         .main-image {
-            width: 536px;
+            width: 468px;
             margin: 0 auto;
             @media (max-width: 1440px) {
                 width: 436px;
@@ -133,21 +134,13 @@ header {
             }
         }
     }
-    .scroll {
-        font-weight: 700;
-        font-size: .875rem;
-        letter-spacing: 1.5px;
-        color: $black;
-        text-transform: uppercase;
-        position: absolute;
-        bottom: 48px;
-    }
+  
     .fixed-misc {
         position: fixed;
         top: 50%;
         right: -48px;
         transform: rotate(-90deg);
-        font-weight: 700;
+        font-weight: bolder;
         text-transform: uppercase;
         font-size: 0.875rem;
         letter-spacing: 1.5px;
@@ -163,7 +156,7 @@ header {
 //About 
 
 .about-blurb {
-    padding: 110px 350px 28px 45px;
+    padding: 115px 350px 28px 45px;
     background: white;
     position: relative;
     z-index: 2;
@@ -180,16 +173,16 @@ header {
             h3 {
                 font-weight: 700;
                 text-transform: uppercase;
-                font-size: 1rem;
+                font-size: 16px;
                 font-weight: bolder;
                 letter-spacing: 1.5px;
                 margin: 0;
             }
             p {
-                font-size: 15px;
+                font-size: 12px;
                 line-height: 1.5rem;
                 font-weight: 300;
-                margin: 40px 0 72px;
+                margin: 20px 0 50px;
             }
         }
     }
@@ -198,7 +191,7 @@ header {
         top: 50%;
         right: -48px;
         transform: rotate(-90deg);
-        font-weight: 700;
+        font-weight: bolder;
         text-transform: uppercase;
         font-size: 0.875rem;
         letter-spacing: 1.5px;
@@ -229,32 +222,61 @@ header {
             h3 {
                 font-weight: 700;
                 text-transform: uppercase;
-                font-size: 1rem;
+                font-size: 16px;
                 letter-spacing: 1.5px;
                 margin: 0;
             }
-            p {
-                font-size: 18px;
-                letter-spacing: 1px;
-                line-height: 2rem;
-                font-weight: 300;
-                margin: 30px 5px 0px 45px;
+        }
+        .container {
+            position: fixed;
+            bottom: 0;
+            padding: 85px 200px 30px 0px;
+
+            .email-image {
+                margin-top: 40px;
+                margin-left: 0px;
+                float: left;
+                width: 18px;
+                position: relative;
             }
-        }
-        .email-image {
-            margin-top: 40px;
-            margin-left: 3px;
-            float: left;
-            width: 26px;
-            position: relative;
-        }
+            .ig-image {
+                margin-top: 20px;
+                margin-left: 0px;
+                float: left;
+                width: 19px;
+                position: relative;
+            }
+            p {
+                font-size: 12px;
+                letter-spacing: 1.5px;
+                line-height: 2rem;
+                font-weight: normal;
+                margin: 28px 0px 0px 30px;
+            }
+            p1 {
+                font-size: 12px;
+                letter-spacing: 1.5px;
+                line-height: 3rem;
+                font-weight: normal;
+                margin: 28px 0px 0px 10px;
+            }
+
+            p3 {
+                font-size: 12px;
+                text-transform: uppercase;
+                letter-spacing: 1.5px;
+                line-height: 1rem;
+                font-weight: bolder;
+                margin: 25px 0px 0px 0px;
+            }
     }
+}
     .fixed-misc {
         position: fixed;
         top: 50%;
         right: -48px;
         transform: rotate(-90deg);
-        font-weight: 700;
+        font-weight: bolder;
         text-transform: uppercase;
         font-size: 0.875rem;
         letter-spacing: 1.5px;
@@ -277,6 +299,7 @@ header {
                 height: 300px;
                 background-position: center;
                 background-size: cover;
+                position: relative;
                 float: left;
                 margin: 8px;
                 overflow: hidden;
@@ -284,7 +307,6 @@ header {
 
                 .img-container {
                     position: relative;
-                    color: white;
                     width: 300px;
                     height: 300px;
                     align-items: center;
@@ -294,9 +316,9 @@ header {
                         display: none;
                         position: absolute;
                         top: 0;
-                        color: #fff5ee;
-                        text-shadow: rgb(90, 113, 145) 0px 0px 1px;
-                        font-size: 24px;
+                        color: white;
+                        text-shadow: 2px 2px 4px #000000;
+                        font-size: 18px;
                         font-family: 'Montserrat', sans-serif;
                         font-weight: normal;
                         text-align: center;
@@ -323,7 +345,7 @@ header {
     top: 50%;
     right: -48px;
     transform: rotate(-90deg);
-    font-weight: 700;
+    font-weight: bolder;
     text-transform: uppercase;
     font-size: 0.875rem;
     letter-spacing: 1.5px;
@@ -331,64 +353,30 @@ header {
         right: -112px;
     }
 }
-// .work {
-//     margin-top: 100px;
-//     position: relative;
 
-//     .row {
-//         justify-content: center;
-//     }
-//     .column {
-//         object-fit: cover;
-//         width: 300px;
-//         height: 300px;
-//         background-position: center;
-//         background-size: cover;
-//         float: left;
-//         margin: 5px;
-//         overflow: hidden;
-//         align: center;
-//     }
-//     .fixed-misc {
-//         position: fixed;
-//         top: 50%;
-//         right: -48px;
-//         transform: rotate(-90deg);
-//         font-weight: 700;
-//         text-transform: uppercase;
-//         font-size: 0.875rem;
-//         letter-spacing: 1.5px;
-//         @media (max-width:1440 px) {
-//             right: -112px;
-//         }
-//     }
-// }
 
-// .img-container {
-//     position: relative;
-//     width: 300px;
-//   }
-  
-//   .img-container:hover .image-caption {
-//     display: flex;
-//   }
-  
-//   .img-container img {
-//     width: 100%;
-//   }
-  
-//   .img-caption {
-//     background: rgba(0, 0, 0, 0.5);
-//     display: none;
-//     color: white;
-//     position: absolute;
-//     width: 100%;
-//     height: 100%;
-//     top: 0;
-//     flex-direction: column;
-//     justify-content: flex-end;
-//     align-items: center;
-//   }
+//Press Pics
+
+.press {
+    margin-top: 100px;
+    position: absolute;
+    width: 50%;
+
+    .container {
+        background: chartreuse;
+
+        .row {
+            left: 0;
+            width: 400px;
+            padding: 2rem;
+        }
+        .column {
+            right: 0;
+            width: 400px;
+            padding: 2rem;
+    }
+}
+}
 
 
 

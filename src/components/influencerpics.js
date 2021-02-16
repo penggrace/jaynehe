@@ -175,7 +175,6 @@ const Influencers = () => {
           }
         }
       }
-
     }
   `)
   return (
