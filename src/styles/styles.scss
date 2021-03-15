@@ -358,24 +358,44 @@ header {
 //Press Pics
 
 .press {
-    margin-top: 100px;
-    position: absolute;
+    margin: 100px 0px 0px 80px;
     width: 50%;
 
     .container {
-        background: chartreuse;
+        justify-content: center;
+        position: absolute;
+        background-position: center;
+        background-size: cover;
+        align: center;
+        flex-direction: column;
+        align-items: center;
+        float: left;
+        display: inline-block;
 
         .row {
             left: 0;
             width: 400px;
-            padding: 2rem;
+            height: 600px;
+            float: left;
+            padding: 0px 0px 0px 200px;
+            object-fit: cover;
         }
         .column {
             right: 0;
             width: 400px;
-            padding: 2rem;
+            height: 600px;
+            float: right;
+            padding: 0px 200px 0px 0px;
+            object-fit: cover;
+        }  
+        .img-container {
+            width: 400px;
+            height: 600px;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }    
     }
-}
 }
 
 

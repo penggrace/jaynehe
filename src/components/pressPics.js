@@ -26,14 +26,14 @@ const Press = () => {
         <div className="press">
             <div className="container">
                 <div className="row">
+                    <div className="img-container">
+                    <Img fluid={data.gem3.childImageSharp.fluid} />
+                    </div>
+                </div>
+                <div className="column">
                 <div className="img-container">
-                            <Img fluid={data.gem3.childImageSharp.fluid} />
-                    </div>
-                    <div className="column">
-                        <div className="img-container">
-                            <Img fluid={data.gem2.childImageSharp.fluid} />
-                        </div>
-                    </div>
+                    <Img fluid={data.gem2.childImageSharp.fluid} />
+                </div>
                 </div>
             </div>
             <div className="fixed-misc">Producer + PR</div>
