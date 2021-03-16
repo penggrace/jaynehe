@@ -210,6 +210,7 @@ header {
     position: relative;
     z-index: 2;
     margin-left: 80px;
+    
     .inner-blurb {
         display: flex;
         justify-content: space-between;
@@ -227,6 +228,7 @@ header {
                 margin: 0;
             }
         }
+    
         .container {
             position: fixed;
             bottom: 0;
@@ -269,6 +271,7 @@ header {
                 font-weight: bolder;
                 margin: 25px 0px 0px 0px;
             }
+          
     }
 }
     .fixed-misc {
@@ -358,7 +361,7 @@ header {
 //Press Pics
 
 .press {
-    margin: 100px 0px 0px 80px;
+    margin: 100px 0px 0px 60px;
     width: 50%;
 
     .container {
@@ -399,4 +402,41 @@ header {
 }
 
 
+.producer {
+    margin-top: 100px;
+    position: relative;
+    
+    .column {
+        float: left;
+        width: 375px;
+        height: 275px;
+        padding: 25px;
 
+    }
+
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+    .container {
+        width: 500px;
+        height: 300px;
+        align-items: center;
+        justify-content:space-around;
+        padding: 5px 0px 25px 10px;
+        background-color: green;
+
+        .caption {
+            position: absolute;
+            padding: 0px 0px 0px 25px;
+            font-size: 14px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bolder;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+    }
+    
+}
