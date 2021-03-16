@@ -5,21 +5,21 @@ import Img from 'gatsby-image'
 const Banner = () => {
     const data = useStaticQuery(graphql`
     query {
-      night: file(relativePath: { eq: "IMG_3508.JPG" }) {
+      jbwow: file(relativePath: { eq: "JBWOW2.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 300) {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      laying: file(relativePath: { eq: "IMG_3495.JPG" }) {
+      tp1: file(relativePath: { eq: "tp1-1.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 300) {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      twoGirls: file(relativePath: { eq: "IMG_3483.JPG" }) {
+      tp3: file(relativePath: { eq: "pp1.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 300) {
             ...GatsbyImageSharpFluid
@@ -33,14 +33,14 @@ const Banner = () => {
             <div className="container">
                 <div className="row">
                     <div className="side-image left">
-                        <Img fluid={data.laying.childImageSharp.fluid} />
+                        <Img fluid={data.tp1.childImageSharp.fluid} />
                     </div>
                     <div className="main-text">Jayne Her</div>
                     <div className="main-image">
-                        <Img fluid={data.night.childImageSharp.fluid} />
+                        <Img fluid={data.jbwow.childImageSharp.fluid} />
                     </div>
                     <div className="side-image right">
-                        <Img fluid={data.twoGirls.childImageSharp.fluid} />
+                        <Img fluid={data.tp3.childImageSharp.fluid} />
                     </div>
                 </div>
             </div>
