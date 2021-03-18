@@ -279,13 +279,13 @@ const Producer = () => {
                 </div>
                 <div className="container">
                     <div className="column">
-                        <Img fluid={data.hw2.childImageSharp.fluid} />
+                        <Img fluid={data.hw1.childImageSharp.fluid} />
                     </div>
                     <div className="column">
                         <Img fluid={data.hw3.childImageSharp.fluid} />
                     </div>
                     <div className="column">
-                        <Img fluid={data.hw1.childImageSharp.fluid} />
+                        <Img fluid={data.hw2.childImageSharp.fluid} />
                     </div>
                     <div className="capCon">
                         <div className="caption">Han Wen eCommerce</div>
