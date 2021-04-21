@@ -27,17 +27,17 @@ html, body {
     width: 1640px;
     min-width: 1640px;
     margin: 0 auto;
-    @media(max-width: 500px) {
-        width: 200px;
-        min-width: 200px;
+    @media(max-width: 1440px) {
+        width: 1280px;
+        min-width: 1280px;
     }
-    @media(max-width: 500px) {
-        width: 276px;
-        min-width: 276px;
+    @media(max-width: 1280px) {
+        width: 976px;
+        min-width: 976px;
     }
-    @media(max-width: 500px) {
-        width: 724px;
-        min-width: 724px;
+    @media(max-width: 976px) {
+        width: 768px;
+        min-width: 768px;
     }
 }
 
@@ -124,23 +124,24 @@ header {
             text-align: center;
             mix-blend-mode: difference;
             z-index: 9;
-            @media (max-width: 500px) {
-                font-size: 3.5rem;
-                letter-spacing: 30px;
+            @media (max-width: 1440px) {
+                font-size: 4.4rem;
+                letter-spacing: 36px;
             }
+            
         }
         .main-image {
             width: 536px;
             margin: 0 auto;
-            @media (max-width: 500px) {
-                width: 280px;
+            @media (max-width: 1440px) {
+                width: 436px;
             }
         }
         .side-image {
             width: 350px;
             position: absolute;
-            @media (max-width: 500px) {
-                width: 128px;
+            @media (max-width: 1440px) {
+                width: 208px;
             }
             &.left {
                 left: 168px;
