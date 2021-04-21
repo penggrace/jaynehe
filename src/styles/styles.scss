@@ -21,6 +21,7 @@ html, body {
     padding: 0;
     margin: 0;
     display: grid;
+    overflow-x: hidden;
 }
 
 .container {
@@ -240,6 +241,7 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
+
         .content {
             width: 33%;
             @media (max-width: 1440px) {
@@ -259,22 +261,21 @@ header {
                 font-size: 12px;
                 line-height: 1.3rem;
                 font-weight: 300;
-                margin: 20px 0 50px;
+                margin: 20px 50px 35px 0px;
             }
             b {
                 font-weight: 1000;
                 font-style: italic;
                 font-family: 'Montserrat', sans-serif;
             }
-            @media (max-width: 1440px) {
-                width: 40%;
-            }
+            
         }
+    
     
         .container {
             position: fixed;
             bottom: 0;
-            padding: 85px 200px 30px 0px;
+            padding: 115px 200px 0px 0px;
 
             .email-image {
                 margin-top: 40px;
@@ -287,9 +288,10 @@ header {
                 margin-top: 20px;
                 margin-left: 0px;
                 float: left;
-                width: 19px;
+                width: 18px;
                 position: relative;
             }
+            
             p {
                 font-size: 12px;
                 letter-spacing: 1.5px;
@@ -310,12 +312,12 @@ header {
                 font-size: 12px;
                 text-transform: uppercase;
                 letter-spacing: 1.5px;
-                line-height: 1rem;
+                line-height: 10px;
                 font-weight: 900;
-                margin: 25px 0px 0px px;
+                margin: 25px 0px 10px;
             }
-          
-    }
+        }  
+    
 }
     .fixed-misc {
         position: fixed;
